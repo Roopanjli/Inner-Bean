@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="tv" class="com.ruby.bean.Tv" scope="prototype">
+<property name="remote">
+<bean id="remote" class="com.ruby.bean.Remote" >
+<property name="type" value="Automatic"></property>
+</bean>
+</property>
+</bean>
+</beans>
